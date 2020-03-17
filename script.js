@@ -26,3 +26,20 @@ let button_equals = document.getElementById("button-equals");
 let button_clear = document.getElementById("button-clear");
 
 //Create functions here
+
+function createButtonEventListeners(){
+    let buttonArray = [button_0, button_1, button_2, button_3, button_4, button_5, button_6, button_7, button_8, button_9];
+
+    for(i = 0; i < 10; i++){
+        button[i].addEventListener("click", needsFunction);
+    }
+}
+
+function createOperatorEventListeners(){
+    let operatorArray = [button_plus, button_minus, button_multiply, button_divide];
+
+    for(i = 0; i < 4; i++){
+        operator[i].addEventListener("click", needsFunction);
+    }
+}
+//Line 34 and 42 need functions to call
